@@ -13,13 +13,19 @@ public class PlayerController : MonoBehaviour {
 
 	void FixedUpdate () 
 	{
+		
+
 		float moveHorizontal = Input.GetAxis ("Horizontal");
 		float moveVertical = Input.GetAxis ("Vertical");
-		float moveJump = Input.GetAxis ("Up");
+		float moveJump = Input.GetAxis ("Jump");
 
-		Vector3 movement = new Vector3 (moveHorizontal, moveJump * 50, moveVertical);
+
+
+
+		Vector3 movement = new Vector3 (moveHorizontal, moveJump * 20, moveVertical);
 		rb.AddForce (movement);
 
 	}
 
 }
+//
